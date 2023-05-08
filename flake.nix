@@ -42,5 +42,6 @@
 	  myVimPlugins = myVimPlugins;
 	};
       };
+      packages.x86_64-linux.update-plugins = import ./update-plugins.nix { inherit pkgs; };
     } // myVimPlugins;
 }
